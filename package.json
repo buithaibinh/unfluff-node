@@ -1,0 +1,61 @@
+{
+  "name": "unfluff-node",
+  "version": "1.0.0",
+  "description": "A web page content extractor",
+  "homepage": "https://github.com/buithaibinh/unfluff-node",
+  "keywords": [
+    "content extraction",
+    "html",
+    "scraping",
+    "scrape",
+    "web page",
+    "body text"
+  ],
+  "maintainers": [
+    {
+      "name": "Binh Bui",
+      "email": "buithaibinh@gmail.com"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Adam Geitgey",
+      "email": "ageitgey@gmail.com"
+    },
+    {
+      "name": "Ale Ornelas",
+      "email": "me@ale.world"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/buithaibinh/unfluff-node"
+  },
+  "bugs": "https://github.com/buithaibinh/unfluff-node/issues",
+  "main": "lib/unfluff.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "commonjs-everywhere": "0.9.x",
+    "deep-equal": "~0.2.1",
+    "mocha": "^8.1.3",
+    "scopedfs": "~0.1.0",
+    "semver": "~4.3.2",
+    "ts-migrate": "^0.1.7"
+  },
+  "scripts": {
+    "build": "npx rimraf lib && cp -rf src lib",
+    "test": "npx mocha -u tdd -r test-setup.js"
+  },
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "https://github.com/buithaibinh/unfluff-node/blob/master/LICENSE"
+    }
+  ]
+}
